@@ -1,7 +1,7 @@
 # Maintainer: Adek Maulana <adek at techdro dot id>
 
 pkgname=tidal-nativefier
-pkgver=1.0.1217
+pkgver=1.0.1217.personal
 pkgrel=1
 pkgdesc="TIDAL desktop built with nativefier (electron) with widevine support"
 arch=("armv7l" "i686" "x86_64")
@@ -31,6 +31,7 @@ build() {
     --single-instance \
     --tray \
     --widevine \
+    --electron-version 11.1.0 \
     "${url}"
 }
 
